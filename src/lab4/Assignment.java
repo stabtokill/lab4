@@ -1,5 +1,3 @@
-
-
 package lab4;
 
 /**
@@ -11,7 +9,7 @@ public class Assignment {
     private int idNumber;
     private String startDate;
     private String endDate;
-    private int[] employeeSize = new int[5];//TODO change this
+    private String[] employee = new String[5];//TODO change this
     private int salary;
     
     
@@ -29,21 +27,42 @@ public class Assignment {
         return endDate;
     }
     
-    public int getEmployee(int x){
-        x++;
-        return employeeSize[x];
+    public String getEmployee(int x){
+        //x++;
+        return employee[x];
     }
     
     public void getConsultant(){ //TODO fix this
     
     }
-   
     
     public int getSalary(){
         return salary;
     }
     
+    public void setidNumber(int x){
+        idNumber = x;
+    }
     
+    public void setStartDate(String x){
+        startDate = x;
+    }
+    
+    public void setEndDate(String x){
+        endDate = x;
+    }
+    
+    public void setEmployee(int a, String x){
+        employee[a] = x;
+    }
+    
+    public void setConsultant(){//TODO
+        
+    }
+    
+    public void setSalary(int x){
+        salary = x;
+    }
     
     
     
