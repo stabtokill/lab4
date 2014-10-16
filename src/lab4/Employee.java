@@ -3,8 +3,8 @@
 package lab4;
 
 /**
- *
- * @author 
+ * section 2
+ * @Zimmer,last name, last name 
  */
 public class Employee 
 {
@@ -71,19 +71,19 @@ public class Employee
     // the get functions take the new variables and send them off to other 
     // classes when they are called.
  
- private void promote(String title)
- {
-     if (title == manager)
-     {
-         jobTitle = manager;
+ //promotes employees to managers.
+ private void promote()
+ {   
+         jobTitle = "manager";
          
-     }
+         //set the newly apointed manager onto a project.
          
  }
- private void increment(int salary)
+ //increase the employee salary by twenty prcent.
+ private void increment()
  {
-     
+     salary = (int) (salary + salary* 0.2);
  }
-         
+
  
 }
