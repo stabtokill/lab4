@@ -67,6 +67,10 @@ public class Employee
  {
      return jobTitle;
  }
+ public getEmployee()
+ {
+     //what needs to be returned?
+ }
  
     // the get functions take the new variables and send them off to other 
     // classes when they are called.
@@ -77,7 +81,7 @@ public class Employee
          jobTitle = "manager";
          
          //set the newly apointed manager onto a project.
-         
+         increment();
  }
  //increase the employee salary by twenty prcent.
  private void increment()
