@@ -40,9 +40,10 @@ public class Employee
  {
      jobTitle = jt; 
  }
- 
-    // set functions recieve vairables and set them equal to a new variable 
-    // names. from there they are stored in those new variables.
+ /*
+    set functions recieve vairables and set them equal to a new variable 
+    names. from there they are stored in those new variables.
+ */
  public int getidnumber()
  {
      return idnumber;
@@ -67,10 +68,10 @@ public class Employee
  {
      return jobTitle;
  }
- 
-    // the get functions take the new variables and send them off to other 
-    // classes when they are called.
- 
+ /*
+    the get functions take the new variables and send them off to other 
+    classes when they are called.
+ */
  private void promote(String jobtitle)
  {
      
