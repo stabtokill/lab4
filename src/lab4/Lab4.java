@@ -3,8 +3,8 @@
 package lab4;
 
 /**
- *
- * @author group
+ *  section 2
+ * Zimmer, last name
  */
 public class Lab4 {
 
