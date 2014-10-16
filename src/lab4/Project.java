@@ -2,8 +2,8 @@
 package lab4;
 
 /**
- *
- * @author 
+ *  Section 2
+ * @Zimmer,last name, last name. 
  */
 public class Project {
     private int proj_idNumber; 
