@@ -71,9 +71,14 @@ public class Employee
     // the get functions take the new variables and send them off to other 
     // classes when they are called.
  
- private void promote(String jobtitle)
+ private void promote(String title)
  {
-     
+     if (title == manager)
+     {
+         jobTitle = manager;
+         
+     }
+         
  }
  private void increment(int salary)
  {
