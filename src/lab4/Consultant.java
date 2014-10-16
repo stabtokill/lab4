@@ -3,8 +3,8 @@
 package lab4;
 
 /**
- *
- * @author 
+ *  Section 2
+ * @zimmer,last name, last name. 
  */
 public class Consultant extends Employee
 {
