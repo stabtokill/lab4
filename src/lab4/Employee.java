@@ -4,7 +4,7 @@ package lab4;
 
 /**
  * section 2
- * @Zimmer,last name, last name 
+ * Zimmer,last name, last name 
  */
 public class Employee 
 {
