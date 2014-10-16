@@ -31,8 +31,8 @@ public class Project {
         proj_idNumber = ped;
     }
         /* 
-             set functions recieve vairables and set them equal to a new variable 
-             names. from there they are stored in those new variables.
+            set functions recieve vairables and set them equal to a new variable 
+            names. from there they are stored in those new variables.
         */
     private int getproj_idNumber(){
         return proj_idNumber;
