@@ -15,6 +15,30 @@ public class Project {
     int[] proj_assignments = new int[10];
     // our array for our assisgnments
     
+    private void setproj_idNumber(int pid){
+        proj_idNumber = pid;
+    }
+    
+    private void setproj_name(String pn){
+        proj_name = pn;
+    }
+    
+    private void setproj_manager(int pm){
+        proj_manager = pm;
+    }
+    
+    public void setproj_startDate(String psd){
+        proj_startDate = psd;
+    }
+    
+    public void setproj_endDate(String ped){
+        proj_endDate = ped;
+    }
+    /*
+    set functions recieve vairables and set them equal to a new variable 
+    names. from there they are stored in those new variables.
+    */
+    
     private int getproj_idNumber(){
         return proj_idNumber;
     }
@@ -30,9 +54,10 @@ public class Project {
     public String getproj_endDate(){
         return proj_endDate;
     }
-    
-    
-    
+     /*
+    the get functions take the new variables and send them off to other 
+    classes when they are called.
+    */
     
     
 }
