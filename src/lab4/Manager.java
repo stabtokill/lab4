@@ -6,7 +6,7 @@ package lab4;
  *  Section 2
  * @Zimmer,last name, last name.
  */
-public class Manager extends employee
+public class Manager extends Employee
 {
     private int projectId = 0;        //what project is this manager working on
     
