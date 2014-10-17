@@ -15,24 +15,25 @@ public class Lab4 {
        Scanner input = new Scanner(System.in);
        String[] employee1;
        employee1 = new String[5];
+       
        System.out.print("Please enter your ID");
-       String s = input.nextLine();
-       employee1[0] = s;
+       employee1[0] = input.nextLine();
+       
        System.out.print("Please enter your Name");
-       String n = input.nextLine();
-       employee1[1] = n;
+       employee1[1] = input.nextLine();
+       
        System.out.print("Please enter your age");
-       String a = input.nextLine();
-       employee1[2] = a;
+       employee1[2] = input.nextLine();
+       
        System.out.print("Please enter your gender");
-       String g = input.nextLine();
-       employee1[3] = g;
+       employee1[3] = input.nextLine();
+       
        System.out.print("Please enter your salary");
-       String m = input.nextLine();
-       employee1[4] = m;
+       employee1[4] = input.nextLine();
+       
        System.out.print("Please enter your job title");
-       String jt = input.nextLine();
-       employee1[5] = jt;
+       employee1[5] = input.nextLine();
+       
        System.out.print(employee1[]);
        
        
