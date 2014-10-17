@@ -21,7 +21,7 @@ public class Lab4 {
           enterInEmployee(e[i]);         
         }
         //making the right sized array for managers.
-        System.out.println("how many Managers will you be entering have?");
+     System.out.println("how many Managers will you be entering have?");
         int manage = s.nextInt();
         Manager m[] = new Manager[manage];
        //filling the array of managers.
