@@ -3,8 +3,8 @@
 package lab4;
 
 /**
- *
- * @author 
+ * section 2
+ * Zimmer, Hoffman, last name 
  */
 public class Employee 
 {
@@ -80,6 +80,27 @@ public class Employee
  {
      
  }
+ public void getEmployee()
+ {
+     //what needs to be returned?
+ }
+ 
+    // the get functions take the new variables and send them off to other 
+    // classes when they are called.
+ 
+ //promotes employees to managers.
+ private void promote()
+ {   
+         jobTitle = "manager";
          
+         //set the newly apointed manager onto a project.
+         increment();
+ }
+ //increase the employee salary by twenty prcent.
+ private void increment()
+ {
+     salary = (int) (salary + salary* 0.2);
+ }
+
  
 }

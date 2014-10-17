@@ -1,8 +1,8 @@
 package lab4;
 
 /**
- *
- * @author 
+ * Section 2
+ * Zimmer,last name, last name.
  */
 public class Assignment {
     
