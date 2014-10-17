@@ -37,4 +37,18 @@ public class Consultant extends Employee
     {
         return endDate;
     }
+     public String toString(){
+        String g;
+        g = "ID Number: " + getidnumber();
+        g+= "\nName: " + getname();
+        g+= "\nAge: " + getage();
+        g+= "\nGender: " + getgender();
+        g+= "\nSalary: $" + getsalary();
+        g+= "\nJob Title: " + getjobTitle();
+        g+= "\nConsultant id " + conId;
+        g+= "\nState date " + startDate;
+        g+= "\nEnd Date " + endDate  + "\n";
+        return g;
+     }
+        
 }

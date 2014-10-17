@@ -40,7 +40,13 @@ public class Lab4 {
           enterInEmployee(c[i]);
           enterInConsult(c[i]);
         }
-        
+    
+       System.out.println( e[1].toString());
+       System.out.println( e[2].toString());
+       System.out.println( m[1].toString());
+       System.out.println( m[2].toString());
+       System.out.println( c[1].toString());
+       System.out.println( c[2].toString());
     }
        //setting all the information for Employee and its extends
     public static void enterInEmployee(Employee x) {
@@ -82,5 +88,5 @@ public class Lab4 {
         x.setendDate(s.next());
         System.out.println("");
     }
-
+   
 }

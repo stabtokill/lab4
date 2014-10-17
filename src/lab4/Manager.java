@@ -28,4 +28,16 @@ public class Manager extends Employee
     {
         return projectId;
     }
+    public String toString(){
+        String g;
+        g = "ID Number: " + getidnumber();
+        g+= "\nName: " + getname();
+        g+= "\nAge: " + getage();
+        g+= "\nGender: " + getgender();
+        g+= "\nSalary: $" + getsalary();
+        g+= "\nJob Title: " + getjobTitle(); 
+        g+= "\nmangaaer id "+ managerId;        
+        g+= "\nprogect id "+ projectId         + "\n";
+        return g;
+    }
 }
