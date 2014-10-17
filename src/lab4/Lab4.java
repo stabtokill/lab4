@@ -11,45 +11,80 @@ import java.util.Scanner;
 public class Lab4 {
 
    public static Scanner s = new Scanner(System.in);
-   
-    public static void main(String[] args) {
-       Employee e1 = new Employee();
-       Employee e2 = new Employee();
-       Employee e3 = new Employee();
-       Employee e4 = new Employee();
-       Employee e5 = new Employee();
-       Employee e6 = new Employee();
-       Employee e7 = new Employee();
-       Employee e8 = new Employee();
-       Employee e9 = new Employee();
-       Employee e10 = new Employee();
-   
-       enterInEmployee(e1);
-       enterInEmployee(e2);
-       enterInEmployee(e3);
-       enterInEmployee(e4);
-       enterInEmployee(e5);
-       enterInEmployee(e6);
-       enterInEmployee(e7);
-       enterInEmployee(e8);
-       enterInEmployee(e9);
-       enterInEmployee(e10);
+   private static boolean newEmployee = false;
+   private static boolean newManager = false;
+    
+   public static void main(String[] args) 
+    {
+        System.out.println("how many employees will you be entering have?");
+        int emp = s.nextInt();
+        Employee e[] = new Employee[emp];
+        
+        System.out.println("how many managers will you be entering have?");
+        int man = s.nextInt();
+        Employee m[] = new Manager[man];
+        
+        System.out.println("how many managers will you be entering have?");
+        int con = s.nextInt();
+        Employee c[] = new Consultant[con];
+        
+        String temp;
+        int i = 0;
+       while (false == newEmployee)
+       {
+          System.out.println("Employee? Y/N");
+           temp = s.next();
+           if (temp.equals("Y"))
+           {
+           e[i] = new Employee();
+           enterInEmployee(e[i]);
+           i++;
+           }
+           else
+             newEmployee = true;
+       }
        
-       System.out.print(e1.toString());
-       System.out.print(e2.toString());
-       System.out.print(e3.toString());
-       System.out.print(e4.toString());
-       System.out.print(e5.toString());
-       System.out.print(e6.toString());
-       System.out.print(e7.toString());
-       System.out.print(e8.toString());
-       System.out.print(e9.toString());
-       System.out.print(e10.toString());       
+       while (false == newEmployee)
+       {
+          System.out.println("Employee? Y/N");
+           temp = s.next();
+           if (temp.equals("Y"))
+           {
+           e[i] = new Employee();
+           enterInEmployee(e[i]);
+           i++;
+           newEmployee = false;
+           }
+           else
+             newEmployee = true;
+       }
        
+       while (false == newEmployee)
+       {
+          System.out.println("Employee? Y/N");
+           temp = s.next();
+           if (temp.equals("Y"))
+           {
+           e[i] = new Employee();
+           enterInEmployee(e[i]);
+           i++;
+           newEmployee = false;
+           }
+           else
+             newEmployee = true;
+       }
+       
+       
+       System.out.print(e[0].toString());
+       
+      
        
     }
     
-    public static void enterInEmployee(Employee x){
+    public static void enterInEmployee(Employee x)
+    {
+        Scanner scan = new Scanner(System.in);
+        Employee i = new Employee();
         
        System.out.print("Please enter your ID: ");
        x.setidnumber(s.nextInt());
@@ -68,6 +103,7 @@ public class Lab4 {
        
        System.out.print("Please enter your job title: ");
        x.setjobTitle(s.next());
+           
     }
     
 }
