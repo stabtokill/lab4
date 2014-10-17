@@ -1,7 +1,8 @@
 package lab4;
 
 /**
- * section 2 Zimmer, Hoffman, Silewski
+ * section 2 
+ * Zimmer, Hoffman, Silewski
  */
 public class Employee {
 

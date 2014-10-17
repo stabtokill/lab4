@@ -3,7 +3,7 @@ package lab4;
 
 /**
  *  Section 2
- * @Zimmer, Hoffman, last name. 
+ * Zimmer, Hoffman, Silewski 
  */
 public class Project {
     private int proj_idNumber; 

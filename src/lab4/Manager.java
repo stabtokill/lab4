@@ -4,7 +4,7 @@ package lab4;
 
 /**
  *  Section 2
- * @Zimmer,last name, last name.
+ *  Zimmer,last name, last name.
  */
 public class Manager extends Employee
 {
@@ -19,13 +19,10 @@ public class Manager extends Employee
     {
         return managerId;
     }
+    //check if the manager has a project.
     public void setprojectId(int pId)
     {
-        if(projectId == 0)
-        projectId = pId;
-        
-        else 
-            
+         projectId = pId;        //needs additional code for the check
     }
     public int getprojectId()
     {

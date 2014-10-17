@@ -4,7 +4,7 @@ package lab4;
 
 /**
  *  Section 2
- * zimmer,last name, last name. 
+ * Zimmer, Hoffman, Silewski. 
  */
 public class Consultant extends Employee
 {
