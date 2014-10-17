@@ -13,6 +13,7 @@ public class Lab4 {
    public static Scanner s = new Scanner(System.in);
    private static boolean newEmployee = false;
    private static boolean newManager = false;
+   private static boolean newConsultant = false;
     
    public static void main(String[] args) 
     {
@@ -20,16 +21,8 @@ public class Lab4 {
         int emp = s.nextInt();
         Employee e[] = new Employee[emp];
         
-        System.out.println("how many managers will you be entering have?");
-        int man = s.nextInt();
-        Employee m[] = new Manager[man];
-        
-        System.out.println("how many managers will you be entering have?");
-        int con = s.nextInt();
-        Employee c[] = new Consultant[con];
-        
         String temp;
-        int i = 0;
+        int i = 1;
        while (false == newEmployee)
        {
           System.out.println("Employee? Y/N");
@@ -44,48 +37,12 @@ public class Lab4 {
              newEmployee = true;
        }
        
-       while (false == newEmployee)
-       {
-          System.out.println("Employee? Y/N");
-           temp = s.next();
-           if (temp.equals("Y"))
-           {
-           e[i] = new Employee();
-           enterInEmployee(e[i]);
-           i++;
-           newEmployee = false;
-           }
-           else
-             newEmployee = true;
-       }
-       
-       while (false == newEmployee)
-       {
-          System.out.println("Employee? Y/N");
-           temp = s.next();
-           if (temp.equals("Y"))
-           {
-           e[i] = new Employee();
-           enterInEmployee(e[i]);
-           i++;
-           newEmployee = false;
-           }
-           else
-             newEmployee = true;
-       }
-       
-       
-       System.out.print(e[0].toString());
-       
-      
-       
-    }
-    
+       Manager man1 = new Manager();
+       enterInEmployee(man1);
+       enterInManager(man1);
+    }  
     public static void enterInEmployee(Employee x)
-    {
-        Scanner scan = new Scanner(System.in);
-        Employee i = new Employee();
-        
+    {   
        System.out.print("Please enter your ID: ");
        x.setidnumber(s.nextInt());
        
@@ -103,7 +60,25 @@ public class Lab4 {
        
        System.out.print("Please enter your job title: ");
        x.setjobTitle(s.next());
-           
+       
+    }
+    public static void enterInManager(Manager x)
+    {      
+        
+        Employee man1 = new Manager();
+        System.out.print("Please enter your manager ID: ");
+        x.setmanagerId(s.nextInt());
+    }
+    public static void enterInConsult(Consultant x)
+    {
+        System.out.print("Please enter Consultant id: ");
+        x.setConsultantId(s.nextInt()); 
+        
+        System.out.print("Please enter statr date: ");
+        x.setsartDate(s.next());
+        
+        System.out.print("Please enter end date: ");
+        x.setendDate(s.next());
     }
     
 }
