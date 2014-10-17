@@ -10,10 +10,16 @@ public class Consultant extends Employee
 {
     private String startDate;
     private String endDate;
+    private int conId;
     
-    public void getConsultant()
+    
+    public void setConsultantId(int id)
     {
-        //return?
+        conId = id;
+    }
+    public int getConsultantId()
+    {
+        return conId;
     }
     public void setsartDate(String s)
     {
@@ -22,5 +28,13 @@ public class Consultant extends Employee
     public void setendDate(String e)
     {
         endDate = e;
+    }
+    public String getStartDate()
+    {
+        return startDate;
+    }
+    public String retEndDate()
+    {
+        return endDate;
     }
 }
