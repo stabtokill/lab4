@@ -34,26 +34,6 @@ public class Project {
     public void setproj_endDate(String ped){
         proj_endDate = ped;
     }
-    /*
-    set functions recieve vairables and set them equal to a new variable 
-    names. from there they are stored in those new variables.
-    */
-    
-    public void setproj_idNumber(int pid){
-        proj_idNumber = pid;
-    }
-     public void setproj_name(int pn){
-        proj_idNumber = pn;
-    }
-      public void setproj_manager(int pm){
-        proj_idNumber = pm;
-    }
-       public void setproj_startDate(int psd){
-        proj_idNumber = psd;
-    }
-        public void setproj_endDate(int ped){
-        proj_idNumber = ped;
-    }
         /* 
             set functions recieve vairables and set them equal to a new variable 
             names. from there they are stored in those new variables.
@@ -79,10 +59,6 @@ public class Project {
     classes when they are called.
  */
     
-     /*
-    the get functions take the new variables and send them off to other 
-    classes when they are called.
-    */
     
     
 }
