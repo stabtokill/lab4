@@ -76,7 +76,7 @@ public class Employee {
     // the get functions take the new variables and send them off to other 
     // classes when they are called.
     private void promote() {
-        //promote gives more money
+            //promote gives more money
         increment();
     }
 
